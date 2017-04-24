@@ -1,0 +1,10 @@
+version: '2'
+services:
+  ps4:
+    build: .
+    container_name: "ps4sploit"
+    volumes:
+        - ./app
+    ports:
+      - "4355:80"
+    restart: always
